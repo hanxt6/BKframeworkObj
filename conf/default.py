@@ -56,6 +56,7 @@ ENVIRONMENT = os.environ.get('BK_ENV', 'development')
 APP_ID = os.environ.get('APP_ID', APP_ID)
 APP_TOKEN = os.environ.get('APP_TOKEN', APP_TOKEN)
 BK_PAAS_HOST = os.environ.get('BK_PAAS_HOST', BK_PAAS_HOST)
+BK_PAAS_INNER_HOST = os.environ.get('BK_PAAS_INNER_HOST', BK_PAAS_HOST)
 
 # 应用访问路径
 SITE_URL = '/'

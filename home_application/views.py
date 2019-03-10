@@ -10,6 +10,7 @@ See the License for the specific language governing permissions and limitations 
 """
 
 from common.mymako import render_mako_context
+from django.views.decorators.csrf import csrf_exempt
 
 
 def home(request):
@@ -32,6 +33,7 @@ def contactus(request):
     """
     return render_mako_context(request, '/home_application/contact.html')
 
+@csrf_exempt
 def helloworld(request):
     """
     helloword示例
